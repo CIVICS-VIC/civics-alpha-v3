@@ -15,9 +15,11 @@ Además, se han tipificado los posibles valores de algunos atributos en varias l
 * **ActivityForm:** Lista de posibles valores que puede tener la Forma de una Actividad (atributo *act_form* de la tabla *actividades*)
 * **ActivityAttend:** Lista de posibles valores que puede tener la inscripción en la actividad (atributo *act_atten* de la tabla *actividades*)
 
-![Modelo de datos expresado en UML](http://www.viveroiniciativasciudadanas.net/civics/img/ModeloDatos_alphav3.png "Imagen del Modelo de datos expresado en UML")
+## Imagen del Modelo de datos expresado en UML
 
-Imagen del Modelo de datos expresado en UML
+![Modelo de datos expresado en UML](http://www.viveroiniciativasciudadanas.net/civics/img/ModeloDatos_alpha_v3.png "Imagen del Modelo de datos expresado en UML")
+
+
 
 ---
 ## Atributos de la tabla *iniciativas*
