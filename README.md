@@ -155,7 +155,7 @@ Se distribuyen en dos tablas:
 * **iniciativas:** Tabla de datos correspondientes a las iniciativas ciudadanas. Una iniciativa es una entidad ciudadana que realiza actividades.
 * **actividades:** Tabla de datos correspondientes a las actividades. Una actividad es un evento organizado por una iniciativa, que tiene lugar en un momento del tiempo (evento) en un determinado lugar.
 
-Para una descripción detallada de las tablas de datos y de sus atributos consulta el documento **DatasetDescription.md**
+Para una descripción detallada de las tablas de datos y de sus atributos consulta el documento [DatasetDescription.md](https://github.com/CIVICS-VIC/civics-alpha-v3/blob/master/DatasetDescription.md)
 
 ## Equipo de desarrollo de la versión alpha v3
 
