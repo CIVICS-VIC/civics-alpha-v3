@@ -2,7 +2,10 @@
 
 # CIVICS alpha v3
 
-Se trata de dos mapas interconectados entre sí y dos formularios de entrada de datos, uno para cada mapa.
+CIVICS es una plataforma donde encontrarás información geolocalizada de las iniciativas de tu ciudad, así como de las actividades que organizan.
+
+Se trata de dos mapas interconectados entre sí, uno de iniciativas y otro de actividades. Además, desde cada mapa puedes acceder a un formulario de entrada de datos, para dar de alta nuevas iniciativas o actividades.
+
 Se encuentra disponible en: [www.civics.es](http://civics.es)
 
 # Mapa de iniciativas
