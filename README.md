@@ -10,6 +10,40 @@ Se encuentra disponible en: [www.civics.es](http://civics.es)
 
 Para una descripción detallada de las tablas de datos y de sus atributos consulta el documento [DatasetDescription.md](https://github.com/CIVICS-VIC/civics-alpha-v3/blob/master/DatasetDescription.md)
 
+---
+# Indice para este documento
+
+[Mapa de iniciativas](#mapa-de-iniciativas)
+
+* [Funcionalidades del mapa de iniciativas](#funcionalidades-del-mapa-de-iniciativas)
+* [Descripción de los documentos del mapa de iniciativas](#descripcion-de-los-documentos-del-mapa-de-iniciativas)
+* [Dependencias](#dependencias)
+
+[Formulario de entrada de nuevas iniciativas](#formulario-de-entrada-de-nuevas-iniciativas)
+
+* [Descripción de los documentos del formulario de entrada de nueva iniciativa](#descripcion-de-los-documentos-del-formulario-de-entrada-de-nueva-iniciativa)
+* [Dependencias](#dependencias-1)
+
+[Mapa de actividades](#mapa-de-actividades)
+
+* [Funcionalidades del mapa de actividades](#funcionalidades-del-mapa-de-actividades)
+* [Descripción de los documentos del mapa de actividades](#descripcion-de-los-documentos-del-mapa-de-actividades)
+* [Dependencias](#dependencias-2)
+
+[Formulario de entrada de nuevas actividades](#formulario-de-entrada-de-nuevas-actividades)
+
+* [Descripción de los documentos del formulario de entrada de nueva actividad](#descripcion-de-los-documentos-del-formulario-de-entrada-de-nueva-actividad)
+* [Dependencias](#dependencias-3)
+
+[Acerca de los datos](#acerca-de-los-datos)
+
+* [Fuente de los datos](#fuente-de-los-datos)
+* [Acceso a los datos](#acceso-a-los-datos)
+* [Descripción de los datos](#descripcion-de-los-datos)
+
+[Equipo de desarrollo de la versión alpha v3](#equipo-de-desarrollo-de-la-version-alpha-v3)
+
+---
 # Mapa de iniciativas
 
 ## Funcionalidades del mapa de iniciativas
@@ -49,6 +83,8 @@ Released under the [MIT licence](http://opensource.org/licenses/mit-license)
 * [Font Awesome 4.4.0:](http://fortawesome.github.io/Font-Awesome/) Biblioteca de iconos abierta
 * [Moment.js](http://momentjs.com/) Librería JavaScript para parsear, validar, manipular y representar datos en forma de fecha.
 * [Google Fonts API](https://developers.google.com/fonts/) Servicio para añadir fuentes de texto
+
+# Formulario de entrada de nuevas iniciativas
 
 ## Descripción de los documentos del formulario de entrada de nueva iniciativa
 
@@ -121,6 +157,8 @@ Released under the [MIT licence](http://opensource.org/licenses/mit-license)
 * [Moment.js](http://momentjs.com/) Librería JavaScript para parsear, validar, manipular y representar datos en forma de fecha
 * [Google Fonts API](https://developers.google.com/fonts/) API para añadir fuentes de texto
 
+# Formulario de entrada de nuevas actividades
+
 ## Descripción de los documentos del formulario de entrada de nueva actividad
 
 ### ./actividades/formulario/index.php
@@ -157,6 +195,9 @@ Biblioteca JavaScript  construida sobre JQuery para la ventana de mapa de geocod
 * [jquery-ui-timepicker-addon.js](https://github.com/trentrichardson/jQuery-Timepicker-Addon) Biblioteca JavaScript construida sobre JQuery para manipular fechas
 * [JQuery-ui](http://jqueryui.com/) Biblioteca JavaScript construida sobre JQuery para la interacción con la interfaz de usuario
 
+---
+# Acerca de los datos
+
 ## Fuente de los datos
 
 Los datos corresponden a la información facilitada por las propias iniciativas mediante formulario web
@@ -170,11 +211,12 @@ Los datos se encuentran alojados en una cuenta del servicio [cartodb.com](https:
 Se distribuyen en dos tablas: 
 
 * **iniciativas:** Tabla de datos correspondientes a las iniciativas ciudadanas. Una iniciativa es una entidad ciudadana que realiza actividades.
-* **actividades:** Tabla de datos correspondientes a las actividades. Una actividad es un evento organizado por una iniciativa, que tiene lugar en un momento del tiempo (evento) en un determinado lugar.
+* **actividades:** Tabla de datos correspondientes a las actividades. Una actividad es un evento organizado por una iniciativa, que tiene lugar en una determinada fecha y hora y en un determinado lugar.
 
 Para una descripción detallada de las tablas de datos y de sus atributos consulta el documento [DatasetDescription.md](https://github.com/CIVICS-VIC/civics-alpha-v3/blob/master/DatasetDescription.md)
 
-## Equipo de desarrollo de la versión alpha v3
+---
+# Equipo de desarrollo de la versión alpha v3
 
 * **Julián Pérez:** Diseño gráfico e IU
 * **David Ruíz:** Desarrollo front-end de vistas de mapa
