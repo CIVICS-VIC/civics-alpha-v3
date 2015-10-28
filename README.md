@@ -8,6 +8,8 @@ Este proyecto consta de dos mapas interconectados entre sí, uno de iniciativas 
 
 Se encuentra disponible en: [www.civics.es](http://civics.es)
 
+Para una descripción detallada de las tablas de datos y de sus atributos consulta el documento [DatasetDescription.md](https://github.com/CIVICS-VIC/civics-alpha-v3/blob/master/DatasetDescription.md)
+
 # Mapa de iniciativas
 
 ## Funcionalidades del mapa de iniciativas
