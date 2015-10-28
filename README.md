@@ -16,32 +16,32 @@ Para una descripción detallada de las tablas de datos y de sus atributos consul
 [Mapa de iniciativas](#mapa-de-iniciativas)
 
 * [Funcionalidades del mapa de iniciativas](#funcionalidades-del-mapa-de-iniciativas)
-* [Descripción de los documentos del mapa de iniciativas](#descripcion-de-los-documentos-del-mapa-de-iniciativas)
+* [Descripción de los documentos del mapa de iniciativas](#descripción-de-los-documentos-del-mapa-de-iniciativas)
 * [Dependencias](#dependencias)
 
 [Formulario de entrada de nuevas iniciativas](#formulario-de-entrada-de-nuevas-iniciativas)
 
-* [Descripción de los documentos del formulario de entrada de nueva iniciativa](#descripcion-de-los-documentos-del-formulario-de-entrada-de-nueva-iniciativa)
+* [Descripción de los documentos del formulario de entrada de nueva iniciativa](#descripción-de-los-documentos-del-formulario-de-entrada-de-nueva-iniciativa)
 * [Dependencias](#dependencias-1)
 
 [Mapa de actividades](#mapa-de-actividades)
 
 * [Funcionalidades del mapa de actividades](#funcionalidades-del-mapa-de-actividades)
-* [Descripción de los documentos del mapa de actividades](#descripcion-de-los-documentos-del-mapa-de-actividades)
+* [Descripción de los documentos del mapa de actividades](#descripción-de-los-documentos-del-mapa-de-actividades)
 * [Dependencias](#dependencias-2)
 
 [Formulario de entrada de nuevas actividades](#formulario-de-entrada-de-nuevas-actividades)
 
-* [Descripción de los documentos del formulario de entrada de nueva actividad](#descripcion-de-los-documentos-del-formulario-de-entrada-de-nueva-actividad)
+* [Descripción de los documentos del formulario de entrada de nueva actividad](#descripción-de-los-documentos-del-formulario-de-entrada-de-nueva-actividad)
 * [Dependencias](#dependencias-3)
 
 [Acerca de los datos](#acerca-de-los-datos)
 
 * [Fuente de los datos](#fuente-de-los-datos)
 * [Acceso a los datos](#acceso-a-los-datos)
-* [Descripción de los datos](#descripcion-de-los-datos)
+* [Descripción de los datos](#descripción-de-los-datos)
 
-[Equipo de desarrollo de la versión alpha v3](#equipo-de-desarrollo-de-la-version-alpha-v3)
+[Equipo de desarrollo de la versión alpha v3](#equipo-de-desarrollo-de-la-versión-alpha-v3)
 
 ---
 # Mapa de iniciativas
