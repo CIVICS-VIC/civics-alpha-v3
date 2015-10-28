@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Content-Language" content="es">
+  <title>CIVICS Iniciativas</title>
+  <meta name="description" content="Con CIVICS sabrás en todo momento qué se cuece en tu ciudad.">
+  <meta name="Keywords" content="Ciudad, entorno, iniciativas ciudadanas">
+  <meta name="author" content="viveroiniciativasciudadanas.net">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <link href='favicon.png' rel='shortcut icon' type='image/png'>
+  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+  <link href='http://fonts.googleapis.com/css?family=Cantarell:400,700|Montserrat:400,700|Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="../css/mapa_general.css" />
+  <link rel="stylesheet" href="./css/mapa_ini.css" />
+</head>
+<body id="body">
+  <div id="header">
+    <h1><a href="" class="wk-col-l logo">Civics (Alpha)</a></h1>
+    <ul id="hd-menu" class="clearfix">
+      <li class="hd-menu-elm hd-menu-place">
+        <a href="#" class="hd-main">Dónde</a>
+        <ul class="hd-menu-2">
+          <li><a href="?city=Madrid" class="active">Madrid</a></li>
+          <li><a href="?city=MexicoDF">México DF </a></li>
+          <li><a href="" class="disabled">León, Guanajuato </a></li>
+          <li><a href="" class="disabled">Barcelona <span>BETA</span></a></li>
+        </ul>
+      </li>      
+      <li class="hd-menu-elm hd-menu-tema">
+        <a href="#" class="hd-main">Temática</a>
+        <ul class="hd-menu-3">
+          <li><a href="#">Todas las temáticas</a></li>
+        </ul>
+      </li>
+      <li class="hd-menu-elm hd-menu-space">
+        <a href="#" class="hd-main">Espacio</a>
+        <ul class="hd-menu-4">
+          <li><a href="#">Todos los tipos de espacio</a></li>
+        </ul>
+      </li>
+      <li class="hd-menu-elm hd-menu-agent">
+        <a href="#" class="hd-main">Agente</a>
+        <ul class="hd-menu-5">
+          <li><a href="#">Todos los agentes</a></li>          
+        </ul>
+      </li>
+      <li class="hd-menu-elm hd-menu-mas">
+        <a href="./formulario/?city=Madrid" class="hd-main">Añadir</a>        
+      </li>
+    </ul>
+    <ul id="hd-menu-r" class"clearfix">
+      <li class="hd-menu-elm hd-menu-act">
+        <a href="../actividades/" class="hd-main-r">Actividades</a>
+      </li>
+      <li class="hd-menu-elm hd-menu-ini">
+        <a href="" class="hd-main-r active">Iniciativas</a>
+      </li>
+    </ul>
+  </div>
+  <div id="main">
+    <div class="map-wrap">      
+      <div id="map"></div>      
+      <div class="overlay" id="sidebar">        
+        <a href="#a" class="hidebtn">Ocultar <i class="fa fa-arrow-left"></i></a>        
+        <h2>Nombre iniciativa</h2>        
+        <div class="ini-address"></div>
+        <h3>categorias</h3>       
+        <div class="ini-desc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore perspiciatis, voluptatem ex possimus tenetur fugit eum aperiam alias, quae consequatur sed eveniet commodi at accusantium vero, maxime dicta. Iusto, voluptatibus!</p>
+        </div>
+        <div class="ini-contact"> 
+          <p>Contacto</p>
+        </div>
+      </div>
+    </div>
+    <div class="main-bottom clearfix">
+      <div class="wk-clr-b">
+        <a href="#a" class="openForm btn" data-target="info">QUÉ ES CIVICS</a>
+        <span>/</span>
+        <a href="#" class="openForm btn" data-target="faq">LEYENDA</a>
+        <a href="http://viveroiniciativasciudadanas.net/" target="_blank" class="wk-col-r power">Powered by VIC</a>
+        <a href="https://twitter.com/civicses/" target="_blank" class="wk-col-r twt"><i class="fa fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <div id="contact-form" class="bl-slide-pnl bl-slpnl-contact clearfix">
+    <a href="#" class="closeForm btn">Vuelve al mapa <i class="fa fa-arrow-up"></i></a>
+    <div class="wrapper">
+       <h2 class="title">Comparte con CIVICS</h2>
+       <p>Si eres una Iniciativa ciudadana, puedes dar a conocer vuestra actividad y/o eventos vinculando tu calendario para que se refleje en el mapa de eventos. Así más gente podrá conoceros, tener un historial gráfico y geoposicionado de tus actividades</p>
+       <p> Es rápido y sencillo.</p>
+
+       <ul class="instruction">
+        <li>
+          <p>Registra tu actividad directamente rellenando <a href="/civics/formulario/formActivity.php">este formulario</a></p>
+          <p>Si no tienes calendario, registra tu actividad directamente rellenando <a href="/civics/formulario/formActivity.php">este formulario</a>.(De todas formas te animamos a que lo tengas y lo subas a tu web)</p>
+        </li>
+
+        <p>Si ya tienes un calendario de Google calendar, sigue los siguientes pasos:</p>
+          <p><em>Nota: Los pasos para ical, o thunderbird son los mismos</em></p>
+
+          <ol>
+            <li>
+              <p>Localiza el calendario que quieres compartir. Pincha en la flecha que despliega este menú y pulsa donde dice “compartir este calendario”:</p>
+              <img src="../img/tut01.jpg" alt="Compartir calendario en Google Calendar. Paso 1"/>
+            </li>
+            <li>
+              <p>Una vez hecho el paso anterior te saldrá este otro cuadro: escribe el nombre de la iniciativa en el campo señalado</p>
+               <img src="../img/tut02.jpg" alt="Compartir calendario en Google Calendar. Paso 2"/>
+            </li> 
+            <li>
+              <p>Haz click en “hacer público este calendario” y  compártelo con <strong>madridcivic@gmail.com</strong></p>
+               <img src="../img/tut03.jpg" alt="compartir calendario en Google Calendar. Paso 3"/>
+            </li>
+            <li>
+              <p>Pulsa en Guardar. De manera automática cada vez que subas una actividad aparecerá en civics.</p>
+            </li>
+            <li>
+              <p>Ya está. Tardará unos minutos en actualizarse, pero ya está todo hecho.</p>
+            </li>
+          </ol>
+        </li>
+        <li>
+         <p><strong>A continuación te damos algunas recomendaciones para que la info que subes al calendario se sincronice sin problemas:</strong></p>
+          <ol>
+            <li>
+              <p>En el campo Dónde/Where escribidlo siempre con este formato: calle Alameda, 15, Madrid, España.   (Así se georreferenciará mejor)
+              </p>
+            </li>
+            <li>
+              <p>En el campo Descripción/Description, escribid el texto del tipo de actividad, tal como habitualmente hacéis. Si queréis organizar la actividad dentro de un tema y tipo, para facilitar su búsqueda en civics, teclea en el mismo campo de descripción:
+              </p>
+              <p>Tema: temática de la actividad (ej. tema: economía)</br>
+                Tipo: tipo de actividad   (e. tipo: concierto)
+              </p>
+            </li>
+          </ol>
+        </li>        
+       </ul>
+      </div>
+  </div>
+
+  <div id="info" class="bl-slide-pnl bl-slpnl-info clearfix">
+    <a href="#" class="closeForm btn">Vuelve al mapa <i class="fa fa-arrow-up"></i></a>
+    <div class="wrapper">
+        <p class='sinsalto'>Muchos ciudadanos trabajan de forma colectiva para construir una ciudad más inclusiva, ética, sostenible, participativa y habitable, desvelando un mapa emergente de tu ciudad.</p>
+        <p class='sinsalto'>Aquí podrás encontrar <strong>iniciativas</strong> y <strong>actividades</strong> existentes en tu calle, barrio, etc.</p> 
+        <p>Ayúdanos a conectar gente con ideas e ideas que buscan gente, que juntas hacen cosas como [huertos urbanos/rutas en bici/solidaridad vecinal, etc]</p> 
+        <p class='sinsalto'>Si formas parte de un colectivo, iniciativa, asociación, comunidad, etc anímate a compartir vuestras actividades, proyectos y eventos.</p>
+        <p><strong>Cuantos más seamos, más ganamos todos.</strong></p>
+      <div class='logo_civics'>
+        <img src="../img/civics_logo.png" alt="logo CIVICS" height=100>
+      </div>
+      <p>IMPULSA TU CIUDAD</p>
+      <div class="iconos_logo">
+        <div class="icono_logo">
+          <i class="fa fa-map"></i>
+          <span>MAPA DE</br>INICIATIVAS CIUDADANAS</span>
+        </div>
+        <div class="icono_logo_plus">
+          <i class="fa fa-plus"></i>
+          <span></br></br></span>
+        </div>
+        <div class="icono_logo">
+          <i class="fa fa-calendar"></i>
+          <span>MAPA DE</br>ACTIVIDADES</br></span>
+        </div>
+        <div class="icono_logo_plus">
+          <i class="fa fa-plus"></i>
+          <span></br></br></span>
+        </div>
+        <div class="icono_logo">
+          <i class="fa fa-info"></i> 
+          <span> INFORMACIÓN</br></br></span>
+        </div>         
+      </div>
+     
+    <div class='pie'>
+      <div class='equipo'>
+        <h3>Equipo</h3>
+        <p>
+        Esaú Acosta (Gestión estratégica)
+        Mauro Gil-Fournier (Comunicación)
+        Miguel Jaenicke (Talleres)
+        Javier Esquillor (Métricas e impacto)
+        Ana Espejo (Marketing)
+        Mariluz Arranz (Relaciones internacionales)
+        Alejandro Zappala (Gestión de Proyecto y desarrollo)
+        Chema Blanco (Desarrollo y documentación)
+        David Ruíz (Desarrollo front-end)
+        Carlos Salgado (Desarrollo front-end)
+        David Moreno (Desarrollo back-end)
+        Alejandro Martín (Desarrollo back-end)
+        Julián Pérez (Diseño gráfico e IU)
+        Ines Gil (Trabajo campo iniciativas)
+        Héctor Sánchez (Trabajo campo iniciativas)
+        Sergio López (Trabajo campo iniciativas)
+        David Gonzalez (Visualizaciones)
+        </br>
+        </p>      
+      </div>
+      <div class='colaboradores'>
+        <h3>Este proyecto está siendo desarrollado mediante la colaboración de: </h3>
+        <div class='logosColab'>
+          <p>          
+            <a href="http://www.aavvmadrid.org/"><img src="../img/fravm_logo.jpg" alt="Federación Regional de Asociaciones Vecinales de Madrid" height=50 top=-200></a>
+            <a href="http://www.intermediae.es//"><img src="../img/logo_imae.jpg" alt="Intermediae" width=154 top=-200></a>
+          </p>
+          <p>
+            <a href="https://www.goethe.de/de/index.html"><img src="../img/goethe-institut_logo1.png" alt="Instituto Goethe" height=50 top=-200></a>
+            <a href="http://medialab-prado.es/"><img src="../img/medialab-prado_logo.png" alt="Medialab-Prado" height=40></a>
+            <a href="http://ccemx.org/"><img src="../img/ccemx_logo.png" alt="Centro Cultural de España en México" height=40></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div id="faq" class="bl-slide-pnl bl-slpnl-faq clearfix">
+    <a href="#" class="closeForm btn">Vuelve al mapa <i class="fa fa-arrow-up"></i></a>
+    <div class="wrapper">
+
+      <h2 class="title"><strong>CIVICS</strong> organiza las iniciativas por:</h2>
+      <ul class="bl--list">
+      <h3><i class="fa fa-tag"></i> TEMÁTICA DE LA INICIATIVA</h3>
+      <h3><i class="fa fa-umbrella"></i> TIPO DE ESPACIO DONDE SE DESARROLLA LA INICIATIVA</h3></li>
+      <h3><i class="fa fa-users"></i> TIPO DE AGENTE IMPULSOR DE LA INICIATIVA</h3>
+      </ul>     
+         
+          <ul class="bl--list">
+            <h3><i class="fa fa-tag"></i> TEMÁTICA DE LA INICIATIVA</h3>  
+        
+            <li><p><i class="fa fa-heart"></i> Apoyo Mutuo y Cuidados: Crianza, Salud, Soberanía Alimentaria, Banco de Alimentos, Gastronomía, Nutrición, Comida y Excedentes, Bienestar Animal...</p>             
+            </li>
+            <li>
+              <p><i class="fa fa-paint-brush"></i> Arte Urbano: Graffitti, Intervenciones artísticas....</p>              
+            </li>
+            <li>
+              <p><i class="fa fa-book"></i> Cultura libre: Ciencia, Tecnología, Software Libre, Cultura Hacker, Identidad Digital, Datos, Sociedad, Gestión cultural, Edición, Musica, Cine, Artes Visuales...</p>
+            </li>
+            <li>
+              <p><i class="fa fa-futbol-o"></i> Deporte</p>
+                         
+            </li>
+            <li>
+              <p><i class="fa fa-transgender-alt"></i> Derechos e Igualdad: Género, Feminismo, Derechos Humanos, Decolonialismo, Comunidades Indígenas...</p>
+            </li>
+            <li>
+              <p><i class="fa fa-leaf"></i> Ecología Urbana y Consumo: Permacultura, Agricultura Urbana, Producción Ecológica, Banco de Semillas, Ruralización, Huertos Urbanos, Ecología, Sostenibilidad, Contaminación, Ecoturismo, Reciclaje</p>
+            </li>
+            <li>
+              <p><i class="fa fa-money"></i> Economía colaborativa: Economía Social, Autogestión, Decrecimiento, Banca Ética, Banco de Tiempo, Moneda Social, Microfinanciación, Propiedad Compartida, Trueque, Cadena de Servicios, Trabajo Compartido, Consumo Colaborativo, Producción Colaborativa, DIY...</p>
+            </li>
+            <li>
+              <p><i class="fa fa-graduation-cap"></i> Educación Expandida: Educación, Emprendizaje, Intercambio de Conocimientos, Conocimiento Compartido, Inteligencia P2P</p>             
+            </li>
+            <li>
+              <p><i class="fa fa-cogs"></i> Mediación y facilitación: Intermediación, Facilitación, Desarrollo social y comunitario, Visibilización, Cartografías y Mapeos, Redes...</p>              
+            </li>
+            <li>
+              <p><i class="fa fa-bicycle"></i> Movilidad Sostenible: Calles tranquilas, Carsharing, Carpooling, Bicicletas</p>              
+            </li>            
+            <li>
+              <p><i class="fa fa-university"></i> Política y Gobernanza: Gobernanza, Políticas Públicas, Energía, Datos Abiertos, Justicia, Transparencia, Participación, Periodismo P2P, Comunes, Presupuestos Participativos...</p>
+            </li>
+            <li>
+              <p><i class="fa fa-home"></i> Urbanismo y Patrimonio: Urbanismo, Arquitectura, Geografía, Vivienda Compartida, Solares Vacíos, Muros, Mobiliario y Dispositivos, Diseño, Autoconstrucción, Derivas...</p>            
+            </li>
+            <li>
+              <p><i class="fa fa-asterisk"></i> Otra</p>
+              <p></p>              
+            </li>            
+          </ul>
+          
+          <ul class="bl--list">
+            <h3><i class="fa fa-umbrella"></i> TIPO DE ESPACIO DONDE SE DESARROLLA LA INICIATIVA</h3>
+            <li>
+              <p class="circ--Centro"></p>
+            </li>
+              <p>Centro Social</p>
+            <li>
+              <p class="circ--Derivas"></p>
+            </li>              
+              <p>Derivas y Rutas Urbanas</p>
+            </li>
+            <li>
+              <p class="circ--Despensas"></p>
+            </li>
+              <p>Despensas Solidarias y Bancos de Intercambio</p>
+            <li>
+              <p class="circ--Digital"></p>
+            </li>
+              <p>Digital</p>
+            </li>
+            <li>
+              <p class="circ--Encuentro"></p>
+            </li>
+              <p>Espacio de Encuentro, Diálogo y Corresponsabilidad</p>
+            </li>
+            <li>
+              <p class="circ--Escuela"></p>
+            </li>
+              <p>Escuela Popular</p>
+            <li>
+              <p class="circ--Huerto"></p>
+            </li>
+              <p>Huerto Urbano</p>              
+            <li>
+              <p class="circ--Infraestructuras"></p>
+            </li>
+            <p>Infraestructuras y/o Intervenciones Urbanas</p>
+            <li>
+              <p class="circ--Medios"></p>
+            </li>
+              <p>Medios de Comunicación Vecinales</p>
+            </li>
+            <li>
+              <p class="circ--Mercado"></p>
+            </li>
+              <p>Mercado Social</p>
+            </li>
+            <li>
+              <p class="circ--Solares"></p>
+            </li>
+              <p>Solares y Espacios Recuperados</p>
+            </li>
+            <li>
+              <p class="circ--Trabajo"></p>
+            </li>
+              <p>Espacio de Trabajo Colaborativo</p>
+            </li>
+            <li>
+              <p class="circ--Otros"></p>
+            </li>
+              <p>Otros</p>
+            </li>
+          </ul>
+
+          <ul class="bl--list">
+            <h3><i class="fa fa-users"></i>TIPO DE AGENTE IMPULSOR DE LA INICIATIVA</h3>
+            <li>
+              <h3>Administración Pública</h3>              
+            </li>
+            <li>         
+              <h3>Asambleas Populares, Mareas, Plataformas y Grupos de Trabajo</h3>
+            </li>
+            <li>
+              <h3>Conquistas Ciudadanas del Pasado</h3>
+            </li>
+            <li>
+              <h3>Empresa Social/Startup</h3>
+            </li>
+            <li>
+              <h3>Iniciativa Ciudadana</h3>
+            </li>
+            <li>
+              <h3>Organizaciones y Asociaciones de Vecinos</h3>
+            </li>
+          </ul>
+
+          <ul class="bl--list">
+            <h3><i class="fa fa-exclamation-triangle"></i> Política de Privacidad</h3>            
+              <p>Esta web no recoge ningún dato de los visitantes. Tampoco recopila ningún tipo de información personal de las personas que dan de alta nuevas actividades. Solamente se recogen los datos que se refieren a las actividades y a las iniciativas que las organizan, mediante un formulario web.</p>
+           
+          </ul>
+    </div>
+  </div>
+  <!-- include cartodb.js library -->
+  <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+  <script src="./js/moment.js"></script>
+  <script src="./js/script.js"></script>  
+</body>
+</html>
