@@ -38,10 +38,6 @@ Documento CSS con estilos del mapa de iniciativas
 ### ./iniciativas/js/script.js
 Documento JavaScript para tomar datos de la base de datos y organizarlos para su visualización
 
-### ./iniciativas/js/moment.js
-Librería JavaScript para parsear, validar, manipular y representar datos en forma de fecha.
-[Moment.js](http://momentjs.com/) 
-
 ### Dependencias
 
 * [CartoDB.js:](http://docs.cartodb.com/cartodb-platform/cartodb-js.html) Librería JavaScript para interactuar con el servicio de datos CartoDB. Se trata de una librería descendiente de Leaflet
@@ -49,6 +45,7 @@ Librería JavaScript para parsear, validar, manipular y representar datos en for
 Copyright (c) 2011 - 2012 George MacKerron. El código se encuentra en ./iniciativas/js/script.js
 Released under the [MIT licence](http://opensource.org/licenses/mit-license)
 * [Font Awesome:](http://fortawesome.github.io/Font-Awesome/) Biblioteca de iconos abierta
+* [Moment.js](http://momentjs.com/) Librería JavaScript para parsear, validar, manipular y representar datos en forma de fecha.
 
 ## Descripción de los documentos del formulario de entrada de nueva iniciativa
 
@@ -102,10 +99,6 @@ Documento CSS con estilos del mapa de actividades
 ### ./actividades/js/script.js
 Documento JavaScript para tomar datos de la base de datos y organizarlos para su visualización
 
-### ./actividades/js/moment.js
-Librería JavaScript para parsear, validar, manipular y representar datos en forma de fecha.
-[Moment.js:](http://momentjs.com/) 
-
 ### Dependencias
 
 * [CartoDB.js:](http://docs.cartodb.com/cartodb-platform/cartodb-js.html) Librería JavaScript para interactuar con el servicio de datos CartoDB. Se trata de una librería descendiente de Leaflet
@@ -113,6 +106,7 @@ Librería JavaScript para parsear, validar, manipular y representar datos en for
 Copyright (c) 2011 - 2012 George MacKerron. El código se encuentra en ./actividades/js/script.js
 Released under the [MIT licence](http://opensource.org/licenses/mit-license)
 * [Font Awesome:](http://fortawesome.github.io/Font-Awesome/) Biblioteca de iconos abierta
+* [Moment.js](http://momentjs.com/) Librería JavaScript para parsear, validar, manipular y representar datos en forma de fecha.
 
 ## Descripción de los documentos del formulario de entrada de nueva actividad
 
@@ -133,15 +127,13 @@ Documento JavaScript para manipular datos de fecha
 
 ### Dependencias
 
-* **./actividades/formulario/js/jquery-1.72.min.js**
+* **jquery-1.72.min.js**
 Biblioteca JavaScript para la simplificación de código
-
 * **jquery-gmaps-latlon-picker.js**
 Biblioteca JavaScript para la ventana de mapa de geocodificación (obtención de coordenadas geográficas a partir de direcciones postales mediante la API de Google)
 * **jquery-ui-timepicker-addon.js**
 Biblioteca JavaScript para manipular fechas
 * **jquery-ui.custom.js**
-
 
 ## Fuente de los datos
 
