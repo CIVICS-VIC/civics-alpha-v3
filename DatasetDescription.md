@@ -1,28 +1,50 @@
 # Descripción de los datos de CIVICS alpha v3
 
+---
+## Índice para este documento
+
+1. [Descripción general](#descripción-general)
+2. [Modelo de datos expresado en UML](#modelo-de-datos-expresado-en-uml)
+3. [Descripción de las tablas](#descripción-de-las-tablas)
+	* [Tabla iniciativas](#tabla-iniciativas)
+	* [Tabla actividades](#tabla-actividades)
+4. [Listas de valores](#listas-de-valores)
+	* [ActivityTopic](#activitytopic)
+	* [IniciativeSpace](#iniciativespace)
+	* [IniciativeAgent](#iniciativeagent)
+	* [ActivityForm](#activityform)
+	* [ActivityAttend](#activityattend)
+
+---
+# Descripción general
+
 Los datos se encuentran alojados en una cuenta del servicio [cartodb.com](https://mappemad.cartodb.com) en forma de base de datos postGIS
 
 Se distribuyen en dos tablas: 
 
-* **iniciativas:** Tabla de datos correspondientes a las iniciativas ciudadanas. Una iniciativa es una entidad ciudadana que realiza actividades.
-* **actividades:** Tabla de datos correspondientes a las actividades. Una actividad es un evento organizado por una iniciativa, que tiene lugar en un momento del tiempo (evento) en un determinado lugar.
+* [iniciativas](#tabla-iniciativas): Tabla de datos correspondientes a las iniciativas ciudadanas. Una iniciativa es una entidad ciudadana que realiza actividades.
+* [actividades](#tabla-actividades) Tabla de datos correspondientes a las actividades. Una actividad es un evento organizado por una iniciativa, que tiene lugar en un momento del tiempo (evento) en un determinado lugar.
 
 Además, se han tipificado los posibles valores de algunos atributos en varias listas, descritas al final de este documento:
 
-* **ActivityTopic:** Lista de posibles valores que puede tener la Temática de una Actividad o la temática general de las actividades que organiza una Iniciativa (atributo *ini_topic* de la tabla *iniciativas* y atributo *act_topic* de la tabla *actividades*). Esta lista de valores ha sido confeccionada mediante diversos talleres y dinámicas realizados con las propias Iniciativas
-* **IniciativeSpace:** Lista de posibles valores que puede tener el tipo de espacio donde se desarrolla u organiza la iniciativa (atributo *ini_space* de la tabla *iniciativas*)
-* **IniciativeAgent:** Lista de posibles valores que puede tener el tipo de agente impulsor de la iniciativa (atributo *ini_agent* de la tabla *iniciativas*) 
-* **ActivityForm:** Lista de posibles valores que puede tener la Forma de una Actividad (atributo *act_form* de la tabla *actividades*)
-* **ActivityAttend:** Lista de posibles valores que puede tener la inscripción en la actividad (atributo *act_atten* de la tabla *actividades*)
+* [ActivityTopic](#activitytopic): Lista de posibles valores que puede tener la Temática de una Actividad o la temática general de las actividades que organiza una Iniciativa (atributo *ini_topic* de la tabla *iniciativas* y atributo *act_topic* de la tabla *actividades*). Esta lista de valores ha sido confeccionada mediante diversos talleres y dinámicas realizados con las propias Iniciativas
+* [IniciativeSpace](#iniciativespace): Lista de posibles valores que puede tener el tipo de espacio donde se desarrolla u organiza la iniciativa (atributo *ini_space* de la tabla *iniciativas*)
+* [IniciativeAgent](#iniciativeagent): Lista de posibles valores que puede tener el tipo de agente impulsor de la iniciativa (atributo *ini_agent* de la tabla *iniciativas*) 
+* [ActivityForm](#activityform): Lista de posibles valores que puede tener la Forma de una Actividad (atributo *act_form* de la tabla *actividades*)
+* [ActivityAttend](#activityattend) Lista de posibles valores que puede tener la inscripción en la actividad (atributo *act_atten* de la tabla *actividades*)
 
-## Imagen del Modelo de datos expresado en UML
+---
+# Modelo de datos expresado en UML
 
 ![Modelo de datos expresado en UML](http://www.viveroiniciativasciudadanas.net/civics/img/ModeloDatos_alpha_v3.png "Imagen del Modelo de datos expresado en UML")
 
-
+---
+# Descripción de las tablas
 
 ---
-## Atributos de la tabla *iniciativas*
+## Tabla *iniciativas*
+
+Descripción de los atributos correspondientes a las iniciativas ciudadanas. Una iniciativa es una entidad ciudadana que realiza actividades
 
 ### cartodb_id
 * **Tipo de dato:** *number*
@@ -30,7 +52,7 @@ Además, se han tipificado los posibles valores de algunos atributos en varias l
 
 ### the_geom
 * **Tipo de dato:** *geometry*
-* **Descripción:** Coordenadas geográficas del lugar donde se desarrollan u organizan las actividades de la iniciativa. Este valor se actualiza automáticamente mediante la composición de los atributos *lat* y *lon*, que se introducen mediante formulario de inscripción.
+* **Descripción:** Geometría de punto definida por las coordenadas geográficas, en el sistema de referencia WGS84, del lugar donde se desarrollan u organizan las actividades de la iniciativa. Este valor se actualiza automáticamente mediante la composición de los atributos *lat* y *lon*, que se introducen mediante formulario de entrada de datos.
 
 ### ini_name
 * **Tipo de dato:** *string*
@@ -66,7 +88,7 @@ Además, se han tipificado los posibles valores de algunos atributos en varias l
 
 ### ini_addres
 * **Tipo de dato:** *string*
-* **Descripción:** Dirección postal donde se desarrollan las actividades de la iniciativa o desde donde se organizan.
+* **Descripción:** Dirección postal donde se desarrollan las actividades de la iniciativa o desde donde se organizan. Ejemplo: Calle Fuenteovejuna, 15, Madrid
 
 ### lat
 * **Tipo de dato:** *number*
@@ -105,7 +127,9 @@ Además, se han tipificado los posibles valores de algunos atributos en varias l
 * **Descripción:** Fecha del último cambio en la información de la iniciativa en la base de datos
 
 ---
-## Atributos de la tabla *actividades*
+## Tabla *actividades*
+
+Descripción de los atributos correspondientes a la tabla actividades. Una actividad es un evento organizado por una iniciativa, que tiene lugar en un momento del tiempo (evento) en un determinado lugar
 
 ### cartodb_id
 * **Tipo de dato:** *number*
@@ -113,7 +137,7 @@ Además, se han tipificado los posibles valores de algunos atributos en varias l
 
 ### the_geom
 * **Tipo de dato:** *geometry*
-* **Descripción:** Coordenadas geográficas del lugar donde se celebra la actividad. Este valor se actualiza automáticamente mediante la composición de los atributos *map_lat* y *map_lon*, que se introducen mediante formulario de inscripción.
+* **Descripción:** Geometría de punto definida por las coordenadas geográficas, en el sistema de referencia WGS84, del lugar donde se celebra la actividad. Este valor se actualiza automáticamente mediante la composición de los atributos *map_lat* y *map_lon*, que se introducen mediante formulario de entrada de datos.
 
 ### act_name
 * **Tipo de dato:** *string*
@@ -168,7 +192,7 @@ Además, se han tipificado los posibles valores de algunos atributos en varias l
 
 ### map_addres
 * **Tipo de dato:** *string*
-* **Descripción:** Dirección postal donde se desarrolla la actividad
+* **Descripción:** Dirección postal donde se desarrolla la actividad. Ejemplo: Calle Fuenteovejuna, 15, Madrid
 
 ### map_lat
 * **Tipo de dato:** *number*
@@ -182,11 +206,12 @@ Además, se han tipificado los posibles valores de algunos atributos en varias l
 * **Tipo de dato:** *date*. En formato según norma ISO 8601. Ejemplo: 2014-09-01T18:46:48Z
 * **Descripción:** Fecha de incorporación de la información de la actividad a la base de datos
 
-### up*date*d_at
+### updated_at
 * **Tipo de dato:** *date*. En formato según norma ISO 8601. Ejemplo: 2014-09-01T18:46:48Z
 * **Descripción:** Fecha del último cambio en la información de la actividad en la base de datos
 
-
+---
+# Listas de valores
 ---
 ## ActivityTopic
 
@@ -248,7 +273,7 @@ Lista de posibles valores que puede tener el tipo de agente impulsor de la inici
 * **Iniciativa Ciudadana**
 * **Organizaciones y Asociaciones de Vecinos**
 
-
+---
 ## ActivityForm
 
 Lista de posibles valores que puede tener la Forma de una Actividad (atributo *act_form* de la tabla *actividades*)
@@ -263,8 +288,9 @@ Lista de posibles valores que puede tener la Forma de una Actividad (atributo *a
 * **Publicación:** Publicación, Revista, Fanzine, Libro, Prensa, Editorial, Entrevista, Artículo...
 * **Taller:** Taller, Autoconstrucción, Intervención Urbana, Trabajo Comunitario, Derivas, Rutas, Rodadas, Estudio de Campo...
 
+---
 ## ActivityAttend
-Lista de posibles valores que puede tener la inscripción en la actividad
+Lista de posibles valores que puede tener la inscripción en la actividad (atributo *act_atten* de la tabla *actividades*)
 
 * **category-attendance-free:** Libre / Gratuita
 * **category-attendance-register:** Inscripción previa /gratuita
