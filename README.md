@@ -46,7 +46,7 @@ Copyright (c) 2011 - 2012 George MacKerron. El código se encuentra incluido en 
 Released under the [MIT licence](http://opensource.org/licenses/mit-license)
 * [Font Awesome 4.4.0:](http://fortawesome.github.io/Font-Awesome/) Biblioteca de iconos abierta
 * [Moment.js](http://momentjs.com/) Librería JavaScript para parsear, validar, manipular y representar datos en forma de fecha.
-* [Google Fonts API](https://developers.google.com/fonts/) API para añadir fuentes de texto
+* [Google Fonts API](https://developers.google.com/fonts/) Servicio para añadir fuentes de texto
 
 ## Descripción de los documentos del formulario de entrada de nueva iniciativa
 
