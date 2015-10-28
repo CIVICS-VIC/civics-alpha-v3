@@ -1,0 +1,192 @@
+@font-face {
+
+font-family: 'FontAwesome';
+  src: url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot');
+  src: url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.eot?#iefix&v=3.2.0') format('embedded-opentype'), 
+       url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.woff') format('woff'), 
+       url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf') format('truetype'), 
+       url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 { font-family: 'Montserrat', sans-serif; font-weight: 800; }
+h2 { font-family: 'Montserrat', sans-serif; }
+h3 { font-family: 'Gentium Book Basic', serif; }
+h4 { font-family: 'Gentium Book Basic', serif; }
+h5 { font-family: 'Cantarell', sans-serif; }
+h6 { font-family: 'Cantarell', sans-serif; }
+h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+
+p { line-height: 1.2em; margin-bottom: 2em; }
+
+.ft-awsm { font-family: 'FontAwesome'; }
+
+/* ___-_ workers _-________________ */
+.inline { display: inline; }
+
+.wk-media-l { float: left; }
+.wk-media-l img, .wk-media-r img { display: block; }
+.wk-media-r { display: table-cell; zoom: 1; }
+
+/* Columns */
+.wk-col-l { display: inline; float: left; }
+.wk-col-r { display: inline; float: right; }
+
+.wk-col-50 { width: 48%; margin: 0 1%; }
+.wk-col-33 { width: 33%; }
+.wk-cent { text-align: center; }
+.wk-right { text-align: right; }
+
+.wk-clr-l { clear: left; }
+.wk-clr-r { clear: right; }
+.wk-clr-b { clear: both; }
+
+.wk-valign { display: table; vertical-align: middle; height: 100%; width: 100%; }
+.wk-valign-cont { display: table-cell; vertical-align: middle; text-align: center; }
+
+/* Class for hidding elements if JavaScript is enabled */
+html.js body .hidden { display: none; }
+
+/* Clearfix trick to clear floated elements */
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* LAYOUT */
+  body { color: #333; font-family: 'Cantarell', sans-serif; font-size: 1.2em; min-height: 100%; position: relative; top: 0;
+    font-size: 0.9em; overflow: hidden; position: fixed; width: 100%; }
+  html, body, #map, #main { height: 100%; padding: 0; margin: 0;min-height: 100%; }
+  body.sidebarAct { padding-left: 300px; box-sizing: border-box; }
+
+  #main { padding-top: 50px; padding-bottom: 35px; box-sizing: border-box; }
+   
+@media (max-width: 1120px) {
+  #hd-menu .hd-menu-elm { width: 65px; }
+  .hd-main { text-indent: -9999px; overflow: hidden; width: 65px; }
+    .hd-main::before { text-indent: 0; }
+}
+
+/*Iconos temática*/ 
+
+.ic--Arte:before { content:'\f1fc'; }
+.ic--Ciencia:before { content:'\f1fa'; }
+.ic--Apoyo:before { content:'\f004'; }
+.ic--Cultura:before { content:'\f02d'; }
+.ic--Economía:before { content:'\f0d6'; }
+.ic--Educación:before { content:'\f19d'; }
+.ic--Deporte:before { content:'\f1e3'; }
+.ic--Derechos:before { content:'\f225'; }
+.ic--Política:before { content:'\f19c'; }
+.ic--Mediación:before { content:'\f085'; }
+.ic--Producción:before { content:'\f085'; }
+.ic--Urbanismo:before { content:'\f015'; }
+.ic--Movilidad:before { content:'\f206'; }
+.ic--Ecología:before { font-size: 1.2em; content:'\f06c'; }
+.ic--Espacio:before { content:'\f1b3'; }
+.ic--Otra:before { content:'\f069'; }
+
+
+/*Logos pie de página*/
+
+/*.main-bottom .power { height: 100%; z-index: 2; position: relative; padding: 0; overflow: hidden; text-indent: -999px; margin-right: 10px;
+      background: #3a7c99 url(../../img/VIC_logo.png) no-repeat; width: 50px; }
+*/
+
+#header .logo { display: block; width: 178px; height: 40px; text-indent: -999px; overflow: hidden; margin: 0 0 0 10px;
+      background: url(../img/civics_alpha_logo.png) no-repeat; }
+
+.main-bottom .twt { color:#000; font-size: 2em; z-index: 2; position: relative; padding: 2px 8px 7px 0px; width: 37px; }
+.main-bottom .power { height: 37px; width: 50px; position: relative; padding: 0 0 0 9px; overflow: hidden; text-indent: -999px; background: url(../img/VIC_logo_min.png) no-repeat; }
+
+
+/* map */
+
+.map-wrap { position: relative; height: 100%; }
+
+.leaflet-top, .leaflet-bottom { z-index: 5; }
+
+.leaflet-div-icon { background: none; border: none;
+          -webkit-transition: all 1s; -moz-transition: all 1s;  -o-transition: all 1s; transition: all 1s; }
+  .leaflet-marker-icon .mk { border-radius: 50px; border: 2px solid white; width: 30px; height: 30px;
+          -webkit-transition: all 1s; -moz-transition: all 1s;  -o-transition: all 1s; transition: all 1s;
+          background-color: #000;
+          box-shadow: 1px 3px rgba(0,0,0,0.1); }
+    .leaflet-marker-icon:hover .mk { z-index: 123213213!important; -webkit-transform-origin: 50% 50%; -webkit-transform: scale(1.2); }
+    .leaflet-marker-icon .mk:before { display: block; height: 30px; width: 30px; color: white; font-family: 'FontAwesome'; 
+        text-align: center; font-size: 1.7em; line-height: 1.6em; margin-top: -2px; text-shadow: 2px 2px rgba(0,0,0,0.3); }
+  .leaflet-marker-icon.disabled { display: none; }
+
+/* sliding panels*/
+
+.social-twitter, .social-link {  }
+.social-twitter:before, .social-link:before { display: inline-block; content:'\f099';  color: #3A7C99; font-family: fontAwesome; font-size: 2.8em; line-height: 1.6em; text-shadow: 2px 2px rgba(0,0,0,0.3);
+    padding-left: 20px; z-index: 2; position: relative; padding: 0; overflow: hidden; text-indent: -999px;
+    width: 37px; height: 36px; }
+
+.bl-slide-pnl { color: #000; width: 100%; padding-top: 80px; z-index: 15;  
+      box-sizing: border-box; position: absolute; bottom: -100%;
+      background: #FDB4EF; height: 100%; overflow: auto;
+      -webkit-transition: all 1s; -moz-transition: all 1s;  -o-transition: all 1s; transition: all 1s;  }
+  .bl-slide-pnl .wrapper {font-family: "Montserrat",sans-serif;   margin: 0 auto; max-width: 960px; width: 100%;padding-bottom: 20px;}
+    .bl-slide-pnl h2 { font-size: 2em; margin: 0 0 1.2em 0; color: #000; }
+    .bl-slide-pnl h3 { font-size: 1.1em; padding: 0.4em;}
+    
+    .bl-slpnl-info p { text-align: center; font-size: 1em;}
+
+    .bl-slpnl-info p.sinsalto {text-align: center; font-size: 1em;margin-bottom: 0;}
+    .bl-slide-pnl .parrafo { margin-bottom: 2em; text-align: center;} 
+    
+    .bl-slide-pnl .logo_civics { text-align: center;  padding: 20px 0px 0px 0px;} 
+    
+    .bl-slide-pnl .iconos_logo {padding-top: 80px; text-align: center; }
+    .bl-slide-pnl .icono_logo {display: inline-block; width: 17em;}
+    .bl-slide-pnl .icono_logo i {font-size: 4em;  }
+    .bl-slide-pnl .icono_logo span { display: block; font-size: 1.2em;  text-align: center;  padding-top: 20px;}
+
+    .bl-slide-pnl .icono_logo_plus {display: inline-block; font-size: 2.3em;}
+
+
+    .bl-slide-pnl .pie {font-size: 0.8em; font-family: "Montserrat",sans-serif; padding-top: 160px;} 
+      .bl-slide-pnl .pie h3 { font-family: "Montserrat",sans-serif; line-height: 2em} 
+
+      
+      .bl-slide-pnl .equipo {position: absolute; left: 40px; display: inline-block; max-width: 45%; text-align: left; font-weight: 800;}
+      .bl-slide-pnl .equipo p {text-align: left;} 
+      .bl-slide-pnl .equipo h3 {text-align: left; padding: 0.4em;} 
+      .bl-slide-pnl .colaboradores {position: absolute; right: 40px; display: inline-block; text-align: right; padding: 0 0 0 40px; max-width: 50%}
+       
+  .bl-slide-pnl .closeForm { position: absolute; right: 20px; top: 20px; color: #000; border: 1px solid ;}
+
+  .bl-slide-pnl .logosColab {/*position: relative; left: 500px; bottom: 50px;*/}
+
+/*LEYENDAS*/
+
+/*listados*/
+
+ul.bl--list { margin-bottom: 1.2em; font-weight: 800; }
+  ul.bl--list li { margin-top: 1em; margin-left: 30px; margin-bottom: 1em; list-style: disc; width: 80%; list-style: none;}
+
+ul.bl--list h3 {left: -20px;}
+ul.bl--list p {margin-left: 40px;}
+ul.bl--list i { margin-left:-60px; margin-right: 15px; margin-bottom: -2.1em;}
+
+
+.bl-slpnl-faq p, .bl-slpnl-faq h3 {text-align: left;}
+.bl-slpnl-faq span {font-size: 1.1em}
+
+
+
+
+
+  /* state */
+.bl-slide-pnl.active { bottom: 0; }
+
+@media (max-width: 960px;) {
+  .bl-slide-pnl .wrapper { margin: 0 4%; width: 92%;}
+}
+
+
+
+
