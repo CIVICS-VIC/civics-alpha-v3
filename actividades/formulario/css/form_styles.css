@@ -1,0 +1,139 @@
+/*CSS PARA EL FORM DE CHEMA*/
+
+@font-face {
+
+font-family: 'FontAwesome';
+  src: url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.eot');
+  src: url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=3.2.0') format('embedded-opentype'), 
+       url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.woff') format('woff'), 
+       url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf') format('truetype'), 
+       url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/fonts/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 { font-family: 'Montserrat', sans-serif; font-weight:800;font-size: 40px;color:#3a7c99;text-align: center; }
+h2 { font-family: 'Montserrat', sans-serif;font-weight:400;color: #3A7C99;text-align: center; }
+h3 { font-family: 'Cantarell', serif;font-weight:800;color:#3a7c99 }
+h4 { font-family: 'Gentium Book Basic', serif; }
+h5 { font-family: 'Cantarell', sans-serif; color:#3a7c99; }
+h6 { font-family: 'Cantarell', sans-serif; }
+h1, h2 { font-family: 'Montserrat', sans-serif; }
+
+
+
+p { font-family: 'Cantarell', sans-serif; line-height: 1.1em; margin-bottom: 1em; }
+
+
+body {
+   background: #ddece7; /* light green */
+   /*color: #262626;*/
+   font-family: Arial, san-serif;
+}
+ 
+#contact-form { 
+   /*background-color: #87C489;*/
+   width: 462px; 
+   padding: 20px; 
+   margin: 50px auto; 
+   border-radius: 15px;   
+   -moz-border-radius: 15px; 
+   -webkit-border-radius: 15px;
+
+}
+ 
+#contact-form input,   
+#contact-form select,   
+#contact-form textarea { 
+   font-size: 15px; 
+   margin-bottom: 2px;
+   font-family: 'Cantarell', sans-serif;
+
+} 
+
+#contact-form label { 
+   font-size: 12px; 
+   margin-bottom: 2px;
+   font-family: 'Montserrat', sans-serif;
+   color:#3A7C99;
+   text-transform:uppercase;
+   
+} 
+ 
+#contact-form input,   
+#contact-form select,   
+#contact-form textarea
+{ 
+   width: 462px;
+   background: #fff;
+   border: 1px;
+   border-style: solid;
+   border-color: #6bbbc1;
+   -moz-border-radius: 5px; 
+   -webkit-border-radius: 5px; 
+   border-radius: 5px;
+   margin-bottom: 25px; 
+   padding: 5px; 
+} 
+
+
+ 
+#contact-form input:focus,   
+#contact-form select:focus,   
+#contact-form textarea:focus { 
+   background-color: #E5E6E7;
+} 
+ 
+#contact-form textarea { 
+   height: 80px;   
+} 
+
+ #address.gllpSearchField{
+  
+  width: 340px;
+  
+  
+ }
+
+#button.gllpSearchButton{
+  width: 100px;
+  margin-left: 6px;
+}
+
+#contact-form .gllpMap {
+  border: 1px;
+  border-style: solid;
+  border-color: #6bbbc1;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px;
+}
+
+#contact-form #submit { 
+   width: 474px;   
+   color: #BFD7C1; 
+   border: none; 
+   background-color: #6EA070;
+} 
+ 
+#contact-form #submit:hover { 
+   background-color: #BFD7C1; 
+   color: #6EA070;
+}
+ 
+input:required, textarea:required { 
+   box-shadow: none;
+   -moz-box-shadow: none; 
+   -webkit-box-shadow: none; 
+   -o-box-shadow: none; 
+}
+ 
+#contact-form .required { 
+   font-weight:bold; 
+   color: #ed714f;     
+}
+ 
+#failure, #success {
+   color: #6EA070;
+   display:none; 
+}
