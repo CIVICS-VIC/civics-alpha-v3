@@ -218,8 +218,8 @@ Para una descripción detallada de las tablas de datos y de sus atributos consul
 ---
 # Equipo de desarrollo de la versión alpha v3
 
-* **Julián Pérez:** Diseño gráfico e IU
-* **David Ruíz:** Desarrollo front-end de vistas de mapa
-* **Chema Blanco:** Desarrollo PHP de Formularios
+* **@largocreatura**: Diseño gráfico e IU
+* **@ruizfrontend**: Desarrollo front-end de vistas de mapa
+* **@chemabc**: Desarrollo de Formularios
 * **Carlos Salgado:** Desarrollo front-end de Formularios
-* **Alejandro Zappala:** (Gestión de Proyecto y desarrollo)
+* **@alayzappala:** (Gestión de Proyecto y desarrollo)
