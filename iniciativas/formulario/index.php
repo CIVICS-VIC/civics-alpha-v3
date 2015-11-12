@@ -206,20 +206,21 @@ if (cadVariables.length>0){
           eval(arrVariableActual[0]+"="+arrVariableActual[1]+";");
         }      
     }
-
     ciudad = city;
     if (ciudad=="MexicoDF"){
-
-        ciudadactiva = "Mexico DF";        
-
+        ciudadactiva = "Mexico DF";
         $('.gllpLatitude').val('19.434997') ;
         $('.gllpLongitude').val('-99.132633');
     };
+        if (ciudad=="Quito"){
+        ciudadactiva = "Quito";
+        $('.gllpLatitude').val('-0.2108') ;
+        $('.gllpLongitude').val('-78.4747');
+    };
     if(ciudad=="Madrid"){
         //centro = (40.41075,-3.69366)
-        ciudadactiva = "Madrid";    
-       
-    };   
+        ciudadactiva = "Madrid";       
+    };    
 };
 
 $(document).ready( function() {

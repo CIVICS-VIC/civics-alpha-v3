@@ -36,6 +36,10 @@ if (cadVariables.length>0){
         centro = new L.LatLng(40.41075,-3.69366);
         cityquery = "Madrid";
     };
+    if(ciudad=="Quito"){
+        centro = new L.LatLng(-0.2108, -78.4747); 
+        cityquery = "Quito";
+    };
     $('.hd-menu-mas').find('a').remove();
     $('.hd-menu-mas').append('<a class="hd-main" href="./formulario/?city=' + ciudad +'">Añadir</a>' );
     $('.hd-menu-ini').find('a').remove();
@@ -348,7 +352,7 @@ var data = {
 //  city=mad}
 
 var mex = [19.434997, -99.132633];
-var gua = [21.115693, -101.6523579];
+var qui =[-0.2108, -78.4747]
 var mad = [40.41, -3.7];
 
 var map = {
@@ -381,9 +385,10 @@ var map = {
             city = mex;
             scp = 12;
             cityquery = "Mexico DF";
-        } else if (ciudad == 'Guanajuato') {
-            city = gua;
+        } else if (ciudad == 'Quito') {
+            city = qui;
             scp = 12;
+            cityquery = "Quito";
         } else if (ciudad == 'Madrid') {
             city = mad;
             scp = 12;
