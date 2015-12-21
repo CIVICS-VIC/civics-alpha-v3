@@ -3,23 +3,7 @@
 	global $debug;
 	if(!$debug)header('Location: http://www.viveroiniciativasciudadanas.net/civics/actividades');
 ?>
-<!-- 
-<!doctype html>
 
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.css" />
-	<script src="http://libs.cartocdn.com/cartodb.js/v2/cartodb.js"></script>
-	<script src="js/sqlDataQueries.js"></script>
-	<style>
-    html, body {padding: 0; margin: 0;}
-    #cartodb-map { width: 100%; height:100%; background: black;}
-	</style>
-</head>
-<body>
-</body>
-</html> 
--->
 <?php 	
  
  /**
@@ -41,10 +25,6 @@
   
   //Act. schedule
   $act_start = strip_tags($_POST['datetime_start']);
-  //$act_end = strip_tags($_POST['datetime_end']); //modificado AZ
-
-  //$act_start = '2015-02-23T11:00:00Z';
-  //$act_end = '2015-02-23T14:00:00Z';
 
   //Act. GEOinfo
   
@@ -54,13 +34,11 @@
 
   $ini_city = strip_tags($_POST['ini_city']);
   $act_city = $ini_city;
-
   
   $ini_lat = strip_tags($_POST['ini_latitude']);  
   $ini_lon = strip_tags($_POST['ini_longitude']);
   $map_zoom = strip_tags($_POST['map_zoom']);
-  //echo "Activity: " . $act_name. "--  Lat: " . $map_lat . ", Long: " . $map_long ;
-  //echo "<br/><br/>";
+
 
   //METER DATOS INICIATIVAS EN CARTODB
 
@@ -173,24 +151,17 @@
    
   	//enviar mail (función de php)
   	mail($mail_to, $mail_subject, $mail_body, $texToMailAlert);
-  	
 	
 		
 	/*************************************************************************************************
 	 * METER ACTIVIDADES EN CARTO DB
 	 *************************************************************************************************/
 	 
-	 /** TEST CURL **/
-	 
-	 //Example query. This inserts a point into a table: Longitude -120.23, Latitude: 10.66
-	//$sql = "INSERT INTO untitled_table_2(the_geom,name) VALUES(ST_SetSRID(ST_MakePoint(-120.23,10.66),4326),'test')";
-//	$sql = "SELECT * FROM ". $table_name;
 	$sqlRegisterActivity = "INSERT INTO " . $act_table_name 
 		. "(" 
-		//. $cartodb_act_field_cartodb_id 		. ","
+
 		. $cartodb_act_field_the_geom 			. ","
-		//. $cartodb_act_field_created_at  		. ","
-		//. $cartodb_act_field_updated_at 			. ","
+
 		. $cartodb_act_field_act_name 			. ","
 		. $cartodb_act_field_act_descri 		. ","
 		. $cartodb_act_field_act_web 			. ","
@@ -201,21 +172,17 @@
 		. $cartodb_act_field_act_atten 			. ","
 		. $cartodb_act_field_act_oatten 		. ","
 		. $cartodb_act_field_act_start 			. ","
-		//. $cartodb_act_field_act_end 			. "," //modificado AZ
-		//. $cartodb_act_field_act_recurre 		. ","
+
 		 . $cartodb_act_field_act_city 		. ","
 		 . $cartodb_act_field_map_addres 		. ","
 		 . $cartodb_act_field_map_lat 			. ","
 		 . $cartodb_act_field_map_lon			. ","
-		// . $cartodb_act_field_ini_id 			. ","
-		// . $cartodb_act_field_ev_timezon 			. ","
-		// . $cartodb_act_field_ev_c_date 			. ","
-		// . $cartodb_act_field_ev_status 		//	. ","
+
 		. $cartodb_act_field_ini_id
 		
 		 
 	 	. ") VALUES (" 
-	 //	. "2,"	//0 - ID
+
 	 	. "ST_SetSRID(ST_Point(". $map_lon . "," . $map_lat . "), 4326)"."," 	//1 - the_geom
 	 	. "'" . $act_name  ."'" . "," 						
 	 	. "'" . $act_descri ."'". "," 						
@@ -227,58 +194,17 @@
 	 	. "'" . $act_atten ."'" . ","
 	 	. "'" . $act_oatten  ."'" . ","
 	 	. "'" . $act_start  ."'" . ","
-	 	//. "'" . $act_end  ."'" . ","
-	 	// . "'" . $act_recurre  ."'" . ","
+
 	 	 . "'" . $act_city  ."'" . ","
 	 	 . "'" . $map_addres  ."'" . ","
 	 	 . "'" . $map_lat  ."'" . ","
 	 	 . "'" . $map_lon  ."'" . ","
-	 	//. "'" . $ini_id ."'" . ","
-	 	// . "'" . $ev_timezon  ."'" . ","
-	 	// . "'" . $ev_c_date  ."'" . ","
-	 	// . "'" . $ev_status  ."'" //. ","
-	 	//. "'" . $  ."'" . ","
-	 //	. "4"
+
 	     . "'" . $ini_id  ."'" //. ","						
 	 	. ")";
-	/**
-	 * SQL QUE FUNCIONAN
-	 * INSERT INTO chem_table (cartodb_id) values (4)
-	 * INSERT INTO chem_table (cartodb_id, act_name) values (5, 'tralaro')
-	 * INSERT INTO chem_table (act_type, act_name) values ('jar jar', 'tralarero')
-	 * INSERT INTO chem_table (act_type) values ('holoita')
-	 * INSERT INTO chem_table (act_name) values ('holoita')
-	 * DELETE from chem_table where cartodb_id > 1
-	 */
-	//$sql = "INSERT INTO chem_table (act_name) values ('holoita')";
-	//$sql = "INSERT INTO ". $table_name ."(" . $cartodb_field_2 . ") values (' ". $activity . " ')";
+
 	
 	$result = executeQueryToCartoDB($sqlRegisterActivity);
 	if($debug)echo("Form input result: " . $result . "<br>");
-	
-	 
-	 /** 2 test secret **/
-	 
-	 
-	 // $cartodb_secret = '';
-// 	 
-// 	 
-	 // require_once 'cartodb.class.php';
-// 
-	// # Create the client using the API key and Secret.
-	// $cartodb =  new CartoDBClient($cartodb_api_key, $cartodb_secret);
-// 	
-	// # Check if the key and secret work fine and you are authorized
-	// if(!$cartodb->authorized) {
-	    // echo("There is a problem authenticating, check the key and secret");
-	    // die();
-	// }
-// 	
-	// # Now we can perform queries straigh away. The second param indicates if you want
-	// # the result to be json_decode (true) or just return the raw json string
-// 	
-	// $result = $cartodb->runSql("SELECT *,geojson(the_geom) FROM my_table",false);
-	// echo($result);
-	
 	
 ?>
