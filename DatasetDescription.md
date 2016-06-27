@@ -15,21 +15,22 @@
 	* [ActivityForm](#activityform)
 	* [ActivityAttend](#activityattend)
 5. [Condiciones y Licencias de los datos](#condiciones-y-licencias-de-los datos)
+
 ---
 # Descripción general
 
 Los datos se encuentran alojados en una cuenta del servicio [cartodb.com](https://mappemad.cartodb.com) en forma de base de datos postGIS
 
-Se distribuyen en dos tablas: 
+Se distribuyen en dos tablas:
 
 * [iniciativas](#tabla-iniciativas): Tabla de datos correspondientes a las iniciativas ciudadanas. [tabla de iniciativas en cartodb](https://mappemad.cartodb.com/tables/iniciativas/public). Una iniciativa es una entidad ciudadana que realiza actividades.
-* [actividades](#tabla-actividades) Tabla de datos correspondientes a las actividades. [tabla de actividades en cartodb](https://mappemad.cartodb.com/tables/iniciativas/public) Una actividad es un evento organizado por una iniciativa, que tiene lugar en un momento del tiempo (evento) en un determinado lugar. 
+* [actividades](#tabla-actividades) Tabla de datos correspondientes a las actividades. [tabla de actividades en cartodb](https://mappemad.cartodb.com/tables/iniciativas/public) Una actividad es un evento organizado por una iniciativa, que tiene lugar en un momento del tiempo (evento) en un determinado lugar.
 
 Además, se han tipificado los posibles valores de algunos atributos en varias listas, descritas al final de este documento:
 
 * [ActivityTopic](#activitytopic): Lista de posibles valores que puede tener la Temática de una Actividad o la temática general de las actividades que organiza una Iniciativa (atributo *ini_topic* de la tabla *iniciativas* y atributo *act_topic* de la tabla *actividades*). Esta lista de valores ha sido confeccionada mediante diversos talleres y dinámicas realizados con las propias Iniciativas
 * [IniciativeSpace](#iniciativespace): Lista de posibles valores que puede tener el tipo de espacio donde se desarrolla u organiza la iniciativa (atributo *ini_space* de la tabla *iniciativas*)
-* [IniciativeAgent](#iniciativeagent): Lista de posibles valores que puede tener el tipo de agente impulsor de la iniciativa (atributo *ini_agent* de la tabla *iniciativas*) 
+* [IniciativeAgent](#iniciativeagent): Lista de posibles valores que puede tener el tipo de agente impulsor de la iniciativa (atributo *ini_agent* de la tabla *iniciativas*)
 * [ActivityForm](#activityform): Lista de posibles valores que puede tener la Forma de una Actividad (atributo *act_form* de la tabla *actividades*)
 * [ActivityAttend](#activityattend) Lista de posibles valores que puede tener la inscripción en la actividad (atributo *act_atten* de la tabla *actividades*)
 
@@ -68,7 +69,7 @@ Descripción de los atributos correspondientes a las iniciativas ciudadanas. Una
 
 ### ini_space
 * **Tipo de dato:** *string* (IniciativeSpace)
-* **Descripción:** Tipo de espacio donde se desarrollan u organizan las actividades de la iniciativa, según los valores enumerados en *IniciativeSpace* 
+* **Descripción:** Tipo de espacio donde se desarrollan u organizan las actividades de la iniciativa, según los valores enumerados en *IniciativeSpace*
 
 ### ini_agent
 * **Tipo de dato:** *string* (IniciativeAgent)
@@ -302,4 +303,3 @@ Puedes consultar, descargar o utilizar el API que los proporciona desde el servi
 
 * [Datos de las iniciativas recopiladas]()
 * [Datos de las actividades recopiladas]()
-
