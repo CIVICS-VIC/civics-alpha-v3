@@ -43,6 +43,8 @@ Para una descripción detallada de las tablas de datos y de sus atributos consul
 
 [Equipo de desarrollo de la versión alpha v3](#equipo-de-desarrollo-de-la-versión-alpha-v3)
 
+[Licencias](#licencias)
+
 ---
 # Mapa de iniciativas
 
@@ -200,11 +202,14 @@ Biblioteca JavaScript  construida sobre JQuery para la ventana de mapa de geocod
 
 ## Fuente de los datos
 
-Los datos corresponden a la información facilitada por las propias iniciativas mediante formulario web
+Los datos corresponden a la información facilitada por las iniciativas
 
 ## Acceso a los datos
 
-Los datos se encuentran alojados en una cuenta del servicio [cartodb.com](https://mappemad.cartodb.com) en forma de base de datos PostGIS
+Puedes consultar, descargar o utilizar el API que los proporciona desde el servicio de www.cartodb.com: 
+
+* [Tabla de las iniciativas recopiladas](https://mappemad.cartodb.com/tables/iniciativas/public)
+* [Tabla de las actividades recopiladas](https://mappemad.cartodb.com/tables/actividades/public)
 
 ## Descripción de los datos
 
@@ -214,7 +219,6 @@ Se distribuyen en dos tablas:
 * **actividades:** Tabla de datos correspondientes a las actividades. Una actividad es un evento organizado por una iniciativa, que tiene lugar en una determinada fecha y hora y en un determinado lugar.
 
 Para una descripción detallada de las tablas de datos y de sus atributos consulta el documento [DatasetDescription.md](https://github.com/CIVICS-VIC/civics-alpha-v3/blob/master/DatasetDescription.md)
-
 ---
 # Equipo de desarrollo de la versión alpha v3
 
@@ -223,3 +227,11 @@ Para una descripción detallada de las tablas de datos y de sus atributos consul
 * **@chemabc**: Desarrollo de Formularios
 * **Carlos Salgado:** Desarrollo front-end de Formularios
 * **@alayzappala:** (Gestión de Proyecto y desarrollo)
+
+---
+# Licencias
+
+![CC](https://i.creativecommons.org/l/by-sa/4.0/88x31.png "Imagen del Logo CIVICS")
+
+Esta obra está bajo una [Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional](http://creativecommons.org/licenses/by-sa/4.0/)
+

@@ -14,7 +14,7 @@
 	* [IniciativeAgent](#iniciativeagent)
 	* [ActivityForm](#activityform)
 	* [ActivityAttend](#activityattend)
-
+5. [Condiciones y Licencias de los datos](#condiciones-y-licencias-de-los datos)
 ---
 # Descripción general
 
@@ -22,8 +22,8 @@ Los datos se encuentran alojados en una cuenta del servicio [cartodb.com](https:
 
 Se distribuyen en dos tablas: 
 
-* [iniciativas](#tabla-iniciativas): Tabla de datos correspondientes a las iniciativas ciudadanas. Una iniciativa es una entidad ciudadana que realiza actividades.
-* [actividades](#tabla-actividades) Tabla de datos correspondientes a las actividades. Una actividad es un evento organizado por una iniciativa, que tiene lugar en un momento del tiempo (evento) en un determinado lugar.
+* [iniciativas](#tabla-iniciativas): Tabla de datos correspondientes a las iniciativas ciudadanas. [tabla de iniciativas en cartodb](https://mappemad.cartodb.com/tables/iniciativas/public). Una iniciativa es una entidad ciudadana que realiza actividades.
+* [actividades](#tabla-actividades) Tabla de datos correspondientes a las actividades. [tabla de actividades en cartodb](https://mappemad.cartodb.com/tables/iniciativas/public) Una actividad es un evento organizado por una iniciativa, que tiene lugar en un momento del tiempo (evento) en un determinado lugar. 
 
 Además, se han tipificado los posibles valores de algunos atributos en varias listas, descritas al final de este documento:
 
@@ -102,10 +102,6 @@ Descripción de los atributos correspondientes a las iniciativas ciudadanas. Una
 * **Tipo de dato:** *string*
 * **Descripción:** Dirección de correo electrónico para contactar con la iniciativa
 
-###ini_tef
-* **Tipo de dato:** *string*
-* **Descripción:** Teléfono de contacto de la iniciativa
-
 ### ini_facebook
 * **Tipo de dato:** *string*
 * **Descripción:** Dirección web del perfil de la red social Facebook correspondiente a la iniciativa
@@ -150,9 +146,6 @@ Descripción de los atributos correspondientes a la tabla actividades. Una activ
 ### act_inicio
 * **Tipo de dato:** *date*. En formato según norma ISO 8601. Ejemplo: 2014-09-01T18:46:48Z
 * **Descripción:** Fecha y hora del inicio de la actividad
-
-### act_final
-* **Tipo de dato:** *date*. En formato según norma ISO 8601. Ejemplo: 2014-09-01T18:46:48Z
 
 ### ini_id
 * **Tipo de dato:** *number*
@@ -296,3 +289,17 @@ Lista de posibles valores que puede tener la inscripción en la actividad (atrib
 * **category-attendance-register:** Inscripción previa /gratuita
 * **category-attendance-paid-inplace:** De pago en el mismo lugar de la actividad
 * **category-attendance-paid-register:** De pago en la inscripción previa
+
+# Condiciones y Licencias de los datos
+
+Esta base de datos no recopila ningún tipo de información personal de las personas que dan de alta nuevas iniciativas o actividades. Solo se recogen los datos que se refieren a las actividades y a las iniciativas que las organizan.
+
+![CC](https://i.creativecommons.org/l/by-sa/4.0/88x31.png "Imagen del Logo Creative Commons")
+
+Todos los datos recopilados están disponibles bajo [Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional](http://creativecommons.org/licenses/by-sa/4.0/)
+
+Puedes consultar, descargar o utilizar el API que los proporciona desde el servicio de www.cartodb.com:
+
+* [Datos de las iniciativas recopiladas]()
+* [Datos de las actividades recopiladas]()
+
