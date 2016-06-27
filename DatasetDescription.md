@@ -299,7 +299,7 @@ Esta base de datos no recopila ningún tipo de información personal de las pers
 
 Todos los datos recopilados están disponibles bajo [Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional](http://creativecommons.org/licenses/by-sa/4.0/)
 
-Puedes consultar, descargar o utilizar el API que los proporciona desde el servicio de www.cartodb.com:
+Puedes consultar, descargar o utilizar el API que los proporciona a través del servicio de www.cartodb.com:
 
-* [Datos de las iniciativas recopiladas]()
-* [Datos de las actividades recopiladas]()
+* [Datos de las iniciativas recopiladas](https://mappemad.cartodb.com/tables/iniciativas/public)
+* [Datos de las actividades recopiladas](https://mappemad.cartodb.com/tables/actividades/public)
