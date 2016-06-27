@@ -14,7 +14,7 @@
 	* [IniciativeAgent](#iniciativeagent)
 	* [ActivityForm](#activityform)
 	* [ActivityAttend](#activityattend)
-5. [Condiciones y Licencias de los datos](#condiciones-y-licencias-de-los datos)
+5. [Condiciones y Licencias de los datos](#condiciones-y-licencias-de-los-datos)
 
 ---
 # Descripción general
