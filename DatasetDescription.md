@@ -14,7 +14,8 @@
 	* [IniciativeAgent](#iniciativeagent)
 	* [ActivityForm](#activityform)
 	* [ActivityAttend](#activityattend)
-5. [Condiciones y Licencias de los datos](#condiciones-y-licencias-de-los-datos)
+5. [Licencias de los datos](#licencia-de-los-datos)
+6. [Acceso a los datos](#acceso-a-los-datos)
 
 ---
 # Descripción general
@@ -291,13 +292,20 @@ Lista de posibles valores que puede tener la inscripción en la actividad (atrib
 * **category-attendance-paid-inplace:** De pago en el mismo lugar de la actividad
 * **category-attendance-paid-register:** De pago en la inscripción previa
 
-# Condiciones y Licencias de los datos
+---
+# Licencia de los datos
 
-Esta base de datos no recopila ningún tipo de información personal de las personas que dan de alta nuevas iniciativas o actividades. Solo se recogen los datos que se refieren a las actividades y a las iniciativas que las organizan.
+Todos los datos recopilados están disponibles bajo [Licencia ODbL](http://opendatacommons.org/licenses/odbl/summary/), por lo que eres libre de:	
+* **Compartir**: copiar. distribuir y utilizar la base de datos;
+* **Crear**: para producir trabajos a partir de los datos;
+* **Adaptar**: para modificar, transformar y desarrollar a partir de los datos.
+Siempre y cuando:
+* **Atribuyas**: indiques la atribución en cualquier uso público de la base de datos, o trabajos contruidos a partir de ella, debes dejar clara a otros la licencia de la base de datos y mantener intacta cualquier notificación acerca de la licencia de la base de datos original
+* **Compartas-Igual**: Si haces uso públicamente de cualquier versión adaptada de esta base de datos, o trabajos producidos de una versión adaptada de la base de datos, debes también ofrecer esa versión adaptada bajo licencia ODbL
+* **Mantengas abierta la licencia**: Si redistribuyes la base de datos, o una versión adaptada de ella, puede que uses medidas tecnológicas que restringen el trabajo (como el DRM), a no ser que también redistribuyas una versión sin esas medidas.
 
-![CC](https://i.creativecommons.org/l/by-sa/4.0/88x31.png "Imagen del Logo Creative Commons")
-
-Todos los datos recopilados están disponibles bajo [Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional](http://creativecommons.org/licenses/by-sa/4.0/)
+---
+# Acceso a los datos
 
 Puedes consultar, descargar o utilizar el API que los proporciona a través del servicio de www.cartodb.com:
 
