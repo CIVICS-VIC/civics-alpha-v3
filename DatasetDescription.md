@@ -297,12 +297,12 @@ Lista de posibles valores que puede tener la inscripción en la actividad (atrib
 
 Todos los datos recopilados están disponibles bajo [Licencia ODbL](http://opendatacommons.org/licenses/odbl/summary/), por lo que eres libre de:	
 * **Compartir**: copiar. distribuir y utilizar la base de datos;
-* **Crear**: para producir trabajos a partir de los datos;
+* **Crear**: para producir otras obras a partir de los datos;
 * **Adaptar**: para modificar, transformar y desarrollar a partir de los datos.
 
 Siempre y cuando:
-* **Atribuyas**: indiques la atribución en cualquier uso público de la base de datos, o trabajos contruidos a partir de ella, debes dejar clara a otros la licencia de la base de datos y mantener intacta cualquier notificación acerca de la licencia de la base de datos original
-* **Compartas-Igual**: Si haces uso públicamente de cualquier versión adaptada de esta base de datos, o trabajos producidos de una versión adaptada de la base de datos, debes también ofrecer esa versión adaptada bajo licencia ODbL
+* **Atribuyas**: Indica la atribución en cualquier uso público de la base de datos, o trabajos contruidos a partir de ella. Debes dejar clara a otros la licencia de la base de datos y mantener intacta cualquier notificación acerca de la licencia de la base de datos original
+* **Compartas-Igual**: Si haces uso público de cualquier versión adaptada de esta base de datos, u obras producidas de una versión adaptada de la base de datos, debes también ofrecer esa versión adaptada bajo licencia ODbL.
 * **Mantengas abierta la licencia**: Si redistribuyes la base de datos, o una versión adaptada de ella, puede que uses medidas tecnológicas que restringen el trabajo (como el DRM), a no ser que también redistribuyas una versión sin esas medidas.
 
 ---
